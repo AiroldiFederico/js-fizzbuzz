@@ -3,3 +3,8 @@ body {
     height: 100vh !important;
 
 }
+
+
+ul li {
+  list-style-type: none;
+}
