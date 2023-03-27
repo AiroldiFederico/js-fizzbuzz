@@ -48,45 +48,14 @@ BONUS 1: Crea un container nel DOM , aggiungendo (attraverso la funzione append(
 BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz. Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna. */
 
 
+
 let ulList = document.querySelector('ul');
-
-// for (let i = 1; i <= 100; i++) {
-
-//     let item = document.createElement('li');
-//     ulList.append(item);
-
-
-//     if (i % 3 == 0) {
-
-
-//         item.innerHTML = `Fizz`;
-
-
-//     } else if (i % 5 == 0) {
-
-
-//         item.innerHTML = `Buzz`;
-
-//     } else if ((i % 3 == 0)  (i % 5 == 0)) {
-
-
-//         item.innerHTML = `FizzBuzz`;
-//         console.log('FizzBuzz');
-
-//     } else {
-//         item.innerHTML = `${i}`;
-//     }
-// }
-
-//item.innerHTML = `FizzBuzz`
-//&& (i % 5 == 0)
-
-
 
 for (let i = 1; i <= 100; i++) {
 
     let item = document.createElement('li');
     ulList.append(item);
+    item.classList.add('box')
 
 
     if ((i % 3 == 0) && (i % 5 == 0)) {
