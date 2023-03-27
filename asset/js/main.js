@@ -50,19 +50,60 @@ BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a s
 
 let ulList = document.querySelector('ul');
 
-//sbagliato
 // for (let i = 1; i <= 100; i++) {
-//     ulList.innerHTML += 
-//     `
-//     <li>
-//         ${i}
-//     </li>
-//     `
+
+//     let item = document.createElement('li');
+//     ulList.append(item);
+
+
+//     if (i % 3 == 0) {
+
+
+//         item.innerHTML = `Fizz`;
+
+
+//     } else if (i % 5 == 0) {
+
+
+//         item.innerHTML = `Buzz`;
+
+//     } else if ((i % 3 == 0)  (i % 5 == 0)) {
+
+
+//         item.innerHTML = `FizzBuzz`;
+//         console.log('FizzBuzz');
+
+//     } else {
+//         item.innerHTML = `${i}`;
+//     }
 // }
+
+//item.innerHTML = `FizzBuzz`
+//&& (i % 5 == 0)
+
+
 
 for (let i = 1; i <= 100; i++) {
 
-    let item = document.createElement('li')
-    item.innerHTML = `${i}`
-    ulList.append(item)
+    let item = document.createElement('li');
+    ulList.append(item);
+
+
+    if ((i % 3 == 0) && (i % 5 == 0)) {
+
+        item.innerHTML = `FizzBuzz`;
+
+    } else if (i % 3 == 0) {
+
+        item.innerHTML = `Fizz`;
+
+    } else if (i % 5 == 0) {
+
+        item.innerHTML = `Buzz`;
+
+    } else {
+
+        item.innerHTML = `${i}`;
+
+    }
 }
