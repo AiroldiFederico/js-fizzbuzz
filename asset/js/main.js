@@ -61,14 +61,17 @@ for (let i = 1; i <= 100; i++) {
     if ((i % 3 == 0) && (i % 5 == 0)) {
 
         item.innerHTML = `FizzBuzz`;
+        item.classList.add('box--1')
 
     } else if (i % 3 == 0) {
 
         item.innerHTML = `Fizz`;
+        item.classList.add('box--2')
 
     } else if (i % 5 == 0) {
 
         item.innerHTML = `Buzz`;
+        item.classList.add('box--3')
 
     } else {
 
